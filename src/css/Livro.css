@@ -1,0 +1,20 @@
+.tarefa-card {
+  background: #7b6fc2;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.tarefa-card .card-header {
+  background: #d9d9d9;
+  color: #000;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-size: 1.1rem;
+}
+
+.tarefa-card .card-footer {
+  background: transparent;
+  border-top: none;
+}

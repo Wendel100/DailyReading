@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Menu from "./components/Menu";
 import './App.css'
-import {Detalhes} from "./Components/Detalhes";
-import { Livros } from "./Components/Livros";
-import { Historico } from "./Components/Historico";
-import {Adcionar} from "./Components/Adcionar";
+import {Detalhes} from "./pages/Detalhes";
+import { Livros } from "./pages/Livros";
+import { Historico } from "./pages/Historico";
+import {Adcionar} from "./pages/Adcionar";
 
 function App() {
   return (

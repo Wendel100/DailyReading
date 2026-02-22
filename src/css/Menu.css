@@ -1,0 +1,113 @@
+.bottom-menu {
+    width: 100%;
+}
+
+.bottom-menu ul {
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: large;
+}
+
+.bottom-menu {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #0066cc, #9933ff);
+}
+
+.bottom-menu ul {
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bottom-menu li {
+    flex: 1;
+}
+
+.bottom-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.bottom-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+.btn-livro {
+  background: #7b6fc2; /* roxo do seu tema */
+  color: white;
+  border: 2px solid #ffffff; /* borda branca */
+  border-radius: 10px; /* retangular com cantos suaves */
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-livro:hover {
+  background: #6a5fb3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+.btn-livro:active {
+  transform: scale(0.98);
+}
+.btn-Adcionar{
+  background: #108048; /* roxo do seu tema */
+  color: white;
+  border: 2px solid #ffffff; /* borda branca */
+  border-radius: 10px; /* retangular com cantos suaves */
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-Adcionar:hover {
+  background: #016b4b;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(184, 167, 167, 0.35);
+}
+
+.btn-Adcionar:active {
+  transform: scale(0.98);
+}
+
+.btn-Apagar{
+  background: #b60600; /* roxo do seu tema */
+  color: white;
+  border: 2px solid #ffffff; /* borda branca */
+  border-radius: 10px; /* retangular com cantos suaves */
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-Apagar:hover {
+  background: #800101;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(184, 167, 167, 0.35);
+}
+
+.btn-Adcionar:active {
+  transform: scale(0.98);
+}
