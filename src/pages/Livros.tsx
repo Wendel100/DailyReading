@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import api from "../services/Api";
 import type { Livro } from "../types/Livro";
-import '../css/Livros.css'
+import '../css/Livro.css'
 
 export function Livros() {
   const [livros, setLivros] = useState<Livro[]>([]);

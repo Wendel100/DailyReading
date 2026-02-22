@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5126/api", // sua API .NET
+  baseURL: "http://localhost:5126/api/rotas", // sua API .NET
   headers: {
     "Content-Type": "application/json",
   },
