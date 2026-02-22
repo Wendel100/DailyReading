@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="dailyreading.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
