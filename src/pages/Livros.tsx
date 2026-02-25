@@ -71,12 +71,9 @@ export function Livros() {
                 <p className="mb-3">
                   <strong>numero de paginas:</strong> {livro.numPaginas}
                 </p>
-                <p className="mb-3">
+                {/* <p className="mb-3">
                   <strong>Criado em :</strong> {livro.dataCriacao.getDate()}
-                </p>
-                 <p className="mb-3">
-                  <strong>Finalizado:</strong> {livro.finalizado}
-                </p>
+                </p> */}
               </div>
 
               {/* Footer */}
