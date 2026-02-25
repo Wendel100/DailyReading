@@ -9,7 +9,7 @@ const [loading, setLoading] = useState(false);
 //adcionar livro
 async function addLivro(nome: string, idade: number, setorId: number) {
   try {
-    await api.post("add", {
+    await api.post("addLivro", {
       name: nome,
       idade,
       setorId,

@@ -1,5 +1,7 @@
 export interface Livro{
-      id: number;
-  name: string;
-  
+  id: number;
+  titulo?: string;
+  numPaginas: number;
+  dataCriacao: Date;
+  finalizado: boolean;
 }

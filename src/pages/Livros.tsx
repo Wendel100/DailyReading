@@ -9,7 +9,7 @@ export function Livros() {
   useEffect(() => {
     async function carregarLivros() {
       try {
-        const response = await api.get<Livro[]>("teste");
+        const response = await api.get<Livro[]>("todo");
         setLivros(response.data);
       } catch (erro) {
         console.error("Erro ao buscar livros:", erro);
@@ -56,7 +56,7 @@ export function Livros() {
 
               {/* Header */}
               <div className="card-header text-center fw-bold">
-                <p className="Titulo">{livro.name}</p>
+                <p className="Titulo">{livro.titulo}</p>
               </div>
 
               {/* Body */}
@@ -66,7 +66,16 @@ export function Livros() {
                 </p>
 
                 <p className="mb-3">
-                  <strong>Nome:</strong> {livro.name}
+                  <strong>Titulo:</strong> {livro.titulo}
+                </p>
+                <p className="mb-3">
+                  <strong>numero de paginas:</strong> {livro.numPaginas}
+                </p>
+                <p className="mb-3">
+                  <strong>Criado em :</strong> {livro.dataCriacao.getDate()}
+                </p>
+                 <p className="mb-3">
+                  <strong>Finalizado:</strong> {livro.finalizado}
                 </p>
               </div>
 
