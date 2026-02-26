@@ -71,10 +71,11 @@ export function Livros() {
                 <p className="mb-3">
                   <strong>numero de paginas:</strong> {livro.numPaginas}
                 </p>
-                {/* <p className="mb-3">
-                  <strong>Criado em :</strong> {livro.dataCriacao.getDate()}
-                </p> */}
-              </div>
+               <p className="mb-3">
+               <strong>Criado em :</strong>{" "}
+                 {new Date(livro.dataCriacao).toLocaleDateString("pt-BR")}
+                  </p>
+                  </div>
 
               {/* Footer */}
               <div className="card-footer d-flex justify-content-between">

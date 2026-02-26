@@ -1,7 +1,7 @@
-export interface Livro{
+export interface Livro {
   id: number;
   titulo?: string;
   numPaginas: number;
-  dataCriacao: Date;
+  dataCriacao: string;
   finalizado: boolean;
 }
