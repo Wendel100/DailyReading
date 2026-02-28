@@ -62,15 +62,18 @@ export function Livros() {
               {/* Body */}
               <div className="card-body">
                 <p className="mb-2">
-                  <strong>ID:</strong>N°{livro.id}
+                N°{livro.id}
                 </p>
 
                 <p className="mb-3">
-                  <strong>Titulo:</strong> {livro.titulo}
+                  <strong>Titulo: </strong>{livro.titulo}
                 </p>
                 <p className="mb-3">
-                  <strong>numero de paginas:</strong> {livro.numPaginas}
-                </p>
+                  <strong>paginas:</strong>{livro.numPaginas}
+                  </p>
+                <p className="mb-3">
+                Vou iniciar a leitura do livro X (X páginas)em X data e estou determinado a finalizá-lo até X data.
+                Com foco e disciplina, alcançarei essa meta!</p>
                <p className="mb-3">
                <strong>Criado em :</strong>{" "}
                  {new Date(livro.dataCriacao).toDateString()}

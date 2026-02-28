@@ -111,3 +111,7 @@
 .btn-Adcionar:active {
   transform: scale(0.98);
 }
+p, h1,h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
