@@ -10,9 +10,9 @@ const [loading, setLoading] = useState(false);
 async function addLivro(titulo: string, nPaginas: number){
   try {
     await api.post("addLivro", {
-      titulo: titulo,
-      nPaginas:nPaginas,
-    });
+  titulo: titulo,
+  numPaginas: nPaginas,
+});
   } catch (erro: any) {
     console.error("🔥 ERRO BACKEND:", erro?.response?.data);
     throw erro;

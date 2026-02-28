@@ -26,7 +26,7 @@ export function Livros() {
   // ✅ nova função com confirmação
   async function confirmarApagar(id: number) {
     const confirmou = window.confirm(
-      "Tem certeza que deseja apagar este livro?"
+      "Certeza que deseja finalizar este livro?"
     );
 
     if (!confirmou) return;
@@ -38,10 +38,10 @@ export function Livros() {
       setLivros((prev) => prev.filter((livro) => livro.id !== id));
 
       // aviso de sucesso
-      alert("Livro finalizado com sucesso😊✨!");
+      alert("Livro finalizado com sucess👍👌");
     } catch (erro) {
-      console.error("Erro ao finalizar o livro:", erro);
-      alert("Erro ao apagar o livro.");
+      console.error("Erro ao finalizar o livro!!!:", erro);
+      alert("Erro ao finalizar o livro!!!:");
     }
   }
 
@@ -64,19 +64,16 @@ export function Livros() {
                 <p className="mb-2">
                 N°{livro.id}
                 </p>
-
                 <p className="mb-3">
-                  <strong>Titulo: </strong>{livro.titulo}
-                </p>
-                <p className="mb-3">
-                  <strong>paginas:</strong>{livro.numPaginas}
-                  </p>
-                <p className="mb-3">
-                Vou iniciar a leitura do livro X (X páginas)em X data e estou determinado a finalizá-lo até X data.
+                Vou iniciar a leitura do livro {livro.titulo} que tem {livro.numPaginas}paginas,
+                estou determinado a finalizá-lo em até 30 dias.
                 Com foco e disciplina, alcançarei essa meta!</p>
                <p className="mb-3">
-               <strong>Criado em :</strong>{" "}
-                 {new Date(livro.dataCriacao).toDateString()}
+               <strong>Criado em :</strong> {new Date(livro.dataCriacao).toLocaleDateString("pt-BR", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  })}
                   </p>
                   </div>
 
@@ -86,8 +83,7 @@ export function Livros() {
                   className="btn btn-success btn-sm"
                   onClick={() => confirmarApagar(livro.id)}
                 >
-                  <i className="bi bi-plus-circle me-1"></i>
-                  Finalizar(+)
+                  <i className="bi bi-check-circle-fill"></i>
                 </button>
               </div>
 
