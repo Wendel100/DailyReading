@@ -38,9 +38,9 @@ export function Livros() {
       setLivros((prev) => prev.filter((livro) => livro.id !== id));
 
       // aviso de sucesso
-      alert("Livro apagado com sucesso!");
+      alert("Livro finalizado com sucesso😊✨!");
     } catch (erro) {
-      console.error("Erro ao apagar livro:", erro);
+      console.error("Erro ao finalizar o livro:", erro);
       alert("Erro ao apagar o livro.");
     }
   }
@@ -62,7 +62,7 @@ export function Livros() {
               {/* Body */}
               <div className="card-body">
                 <p className="mb-2">
-                  <strong>ID:</strong> {livro.id}
+                  <strong>ID:</strong>N°{livro.id}
                 </p>
 
                 <p className="mb-3">
@@ -73,7 +73,7 @@ export function Livros() {
                 </p>
                <p className="mb-3">
                <strong>Criado em :</strong>{" "}
-                 {new Date(livro.dataCriacao).toLocaleDateString("pt-BR")}
+                 {new Date(livro.dataCriacao).toDateString()}
                   </p>
                   </div>
 

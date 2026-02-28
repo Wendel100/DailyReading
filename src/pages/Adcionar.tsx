@@ -1,18 +1,16 @@
 import { useState } from "react";
 import api from "../services/Api";
 export function Adcionar(){
-const [name, setNome] = useState("");
-const [idade, setIdade] = useState<number | "">("");
-const [setorId, setSetorId] = useState<number | "">("");
+const [titulo, setTitulo] = useState("");
+const [nPaginas, setNpaginas] = useState<number | "">("");
 const [loading, setLoading] = useState(false);
 
 //adcionar livro
-async function addLivro(nome: string, idade: number, setorId: number) {
+async function addLivro(titulo: string, nPaginas: number){
   try {
     await api.post("addLivro", {
-      name: nome,
-      idade,
-      setorId,
+      titulo: titulo,
+      nPaginas,
     });
   } catch (erro: any) {
     console.error("🔥 ERRO BACKEND:", erro?.response?.data);
@@ -22,7 +20,7 @@ async function addLivro(nome: string, idade: number, setorId: number) {
 async function handleSubmit(e: React.FormEvent) {
   e.preventDefault();
 
-  if (!name || idade === "" || setorId === "") {
+  if (!titulo || nPaginas === "") {
     alert("Preencha todos os campos!");
     return;
   }
@@ -30,15 +28,13 @@ async function handleSubmit(e: React.FormEvent) {
   try {
     setLoading(true);
 
-    await addLivro(name, Number(idade), Number(setorId));
+    await addLivro(titulo, Number(nPaginas));
 
     alert("Livro cadastrado com sucesso!");
 
     // limpa formulário
-    setNome("");
-    setIdade("");
-    setSetorId("");
-
+    setTitulo("");
+    setNpaginas("");
   } catch {
     alert("Erro ao cadastrar livro.");
   } finally {
@@ -55,29 +51,19 @@ async function handleSubmit(e: React.FormEvent) {
                     <input
                         type="text"
                         className="form-control"
-                        placeholder="Nome"
-                        value={name}
-                        onChange={(e) => setNome(e.target.value)} />
+                        placeholder="titulo"
+                        value={titulo}
+                        onChange={(e) => setTitulo(e.target.value)} />
                 </div>
 
                 <div className="col-md-3">
                     <input
                         type="number"
                         className="form-control"
-                        placeholder="Idade"
-                        value={idade}
-                        onChange={(e) => setIdade(Number(e.target.value))} />
+                        placeholder="paginas"
+                        value={nPaginas}
+                        onChange={(e) => setNpaginas(Number(e.target.value))} />
                 </div>
-
-                <div className="col-md-3">
-                    <input
-                        type="number"
-                        className="form-control"
-                        placeholder="Setor ID"
-                        value={setorId}
-                        onChange={(e) => setSetorId(Number(e.target.value))} />
-                </div>
-
                 <div className="col-md-2 d-grid">
                     <button
                         type="submit"

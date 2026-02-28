@@ -1,1 +1,2 @@
 C:\Users\darkr\Desktop\DailyReading\obj\Debug\dailyreading.esproj.CoreCompileInputs.cache
+C:\Users\renan.paes\Desktop\DailyReading\obj\Debug\dailyreading.esproj.CoreCompileInputs.cache
