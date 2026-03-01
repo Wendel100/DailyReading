@@ -47,7 +47,7 @@ export function Livros() {
 
   return (
     <div className="container mt-4">
-      <h1 className="mb-4 text-bold">Lista de livros</h1>
+      <h1 className="mb-4 text-bold">Livros finalizados</h1>
 
       <div className="row g-4">
         {livros.map((livro) => (
@@ -65,10 +65,10 @@ export function Livros() {
                 N°{livro.id}
                 </p>
                 <p className="mb-3">
-                Vou iniciar a leitura do livro {livro.titulo} que tem {livro.numPaginas}paginas,
+                Vou iniciar a leitura do livro <span className="tituloLivro">{livro.titulo}</span> que tem {livro.numPaginas} paginas,
                 estou determinado a finalizá-lo em até 30 dias.
                 Com foco e disciplina, alcançarei essa meta!</p>
-               <p className="mb-3">
+               <p>
                <strong>Criado em :</strong> {new Date(livro.dataCriacao).toLocaleDateString("pt-BR", {
     day: "2-digit",
     month: "2-digit",

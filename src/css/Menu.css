@@ -46,7 +46,7 @@
 }
 .btn-livro {
   background: #7b6fc2; /* roxo do seu tema */
-  color: white;
+  color: rgb(255, 255, 255);
   border: 2px solid #ffffff; /* borda branca */
   border-radius: 10px; /* retangular com cantos suaves */
   padding: 10px 18px;

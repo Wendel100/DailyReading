@@ -5,7 +5,7 @@ function Menu() {
   return (
     <nav className="bottom-menu">
       <ul>
-        <li><Link to="/detalhes"><button className="btn-Adcionar"><i className="bi bi-info-circle"></i></button></Link></li>
+        <li><Link to="/detalhes"><button className="btn-sobre"><i className="bi bi-info-circle"></i></button></Link></li>
         <li><Link to="/adcionar"><button className="btn-Adcionar"><i className="bi bi-file-earmark-plus"></i></button></Link></li>
         <li><Link to="/livros"><button className="btn-livro"><i className="bi bi-book-fill"></i></button></Link>
         </li>

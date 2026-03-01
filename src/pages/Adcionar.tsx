@@ -48,7 +48,7 @@ async function handleSubmit(e: React.FormEvent) {
       onSubmit={handleSubmit}
       className="card form-card mb-4"
     >
-      <h5 className="mb-3">Adcionar Livro</h5>
+      <h4 className="mb-3"><i className="bi bi-plus-square-fill"></i> Livro</h4>
 
       <div className="row g-2">
         <div className="col-md-4">
